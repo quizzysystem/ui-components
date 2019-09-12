@@ -1,0 +1,37 @@
+{
+  "name": "@quizzy/ui-components",
+  "version": "1.0.0",
+  "description": "core components for quizzySystem",
+  "main": "src/index.js",
+  "scripts": {
+    "managers": "npm install --prefix ../ dep-mngr-eslint dep-mngr-webpack",
+    "eslintrc": "cross-env PATH=\"../node_modules/.bin/:$PATH\" dep-mngr-eslint",
+    "babelrc": "cross-env PATH=\"../node_modules/.bin/:$PATH\" dep-mngr-webpack",
+    "lint": "cross-env PATH=\"../node_modules/.bin/:$PATH\" eslint ./src && echo \"eslint: ok!\"",
+    "start": "styleguidist server",
+    "build": "styleguidist build",
+    "prepublish": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quizzysystem/ui-components.git"
+  },
+  "author": "chekhivskyi.andrii@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quizzysystem/ui-components/issues"
+  },
+  "homepage": "https://github.com/quizzysystem/ui-components#readme",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@quizzy/static-pages": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "react-styleguidist": "^9.1.13",
+    "svg-sprite-loader": "^4.1.6"
+  }
+}

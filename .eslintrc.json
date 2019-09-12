@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "es6": true,
+      "classes": true
+    },
+    "ecmaVersion": 9
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    "react/button-has-type": 0,
+    "react/jsx-filename-extension": 0,
+
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0
+  }
+}
